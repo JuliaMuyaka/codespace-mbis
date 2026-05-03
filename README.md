@@ -1,6 +1,6 @@
 # MBIS Codespace
 
-Welcome to your assignment repository!  When you open up a codespace, it automatically sets up a personal coding environment in the cloud: no installation, no configuration, nothing to do on your own computer. All you need is a browser.
+Welcome to your project repository!  When you open up a codespace, it automatically sets up a personal coding environment in the cloud: no installation, no configuration, nothing to do on your own computer. All you need is a browser.
 
 Inside that browser, you get a fully working version of VS Code: a code editor, a file explorer, and a terminal — everything a developer uses, ready to go. All agentic coding tools have been pre-installed with default instructions and skills. You only need to create API keys and/or authenticate your accounts to get started "vibe" coding your prototype.
 
@@ -12,6 +12,8 @@ Sign up for free at [github.com](https://github.com) and apply for the GitHub St
 
 - Student Pack: <https://github.com/education/students>
 
+---
+
 ## 2. Open and close your codespace
 
 Open your assignment repository on GitHub, click the green **`< > Code`** button → **Codespaces** tab → **Create codespace on main**.
@@ -20,6 +22,8 @@ Open your assignment repository on GitHub, click the green **`< > Code`** button
 - The codespace **stops automatically after 30 minutes of inactivity**. Your work is preserved.
 - To stop it yourself when finishing a session, run `mbis stop` in the terminal.
 - **Do not delete a codespace.** Deletion discards anything that has not been saved to your repository.
+
+---
 
 ## 3. Find and use the terminal
 
@@ -50,6 +54,8 @@ A few small commands you will use often:
 
 If you see an unfamiliar command or error, copy and paste it into one of the agents and ask what it means. You can also run `mbis help terminal` any time for this same cheat-sheet inside the terminal.
 
+---
+
 ## 4. Save your work
 
 Your work in the codespace is **not** the same as your work in your repository on GitHub. Two helpers keep them in sync:
@@ -59,6 +65,8 @@ Your work in the codespace is **not** the same as your work in your repository o
 - **Auto-save:** an extension called GitDoc quietly uploads your changes to your repository about 30 seconds after each edit. You usually don't have to think about it.
 
 If `mbis save` ever stops with a message about a conflict, paste the message into one of the agentic tools and ask what to do.
+
+---
 
 ## 5. Store your API keys (Codespaces secrets)
 
@@ -73,6 +81,8 @@ Reference: [Managing account-specific secrets for Codespaces](https://docs.githu
 
 > Never paste an API key into a project file or commit it to your repository.
 
+---
+
 ## 6. The agentic coding tools
 
 Six agents are pre-installed. Type the command name into the terminal **from inside your project folder** to launch one.
@@ -85,7 +95,7 @@ Six agents are pre-installed. Type the command name into the terminal **from ins
 | `gemini` | Google Gemini CLI | Anyone with a Google account (free tier is generous) |
 | `opencode` | OpenCode | Low-cost paid plans (OpenCode Go, Mistral Le Chat Pro) |
 
-**Also installed**, in case you'd like to compare:
+**Also installed**:
 
 | Command | Tool |
 | --- | --- |
@@ -100,6 +110,8 @@ Inside any agent:
 - `/help` lists what the agent can do. `/exit` (or `/quit`) closes it.
 
 For details on which provider/key each tool needs, see [providers-and-models.md](providers-and-models.md).
+
+---
 
 ## 7. Your project workflow
 
@@ -121,6 +133,8 @@ The command creates the folder, copies in the agent template files, and moves yo
 
 Each skill is a slash command available inside the agent. Run them in order; each one builds on the document the previous one produced.
 
+---
+
 ## 8. AgentsView dashboard
 
 A dashboard called **AgentsView** runs automatically inside your codespace on port `2223`. Open it from the **Ports** panel at the bottom of VS Code (click the small globe icon next to port 2223).
@@ -132,6 +146,8 @@ Use it to:
 - Review past conversations when reflecting on your experience for the assignment.
 
 The file `agentsview_export/sessions.db` in your repository is the **assignment evidence** of your sessions. Leave it alone — `mbis save` backs it up automatically each time you save.
+
+---
 
 ## 9. Helper skills
 
@@ -150,6 +166,8 @@ Two further capabilities need an API key (sign in with GitHub at the provider's 
 
 You're welcome to install more skills, but only from reputable sources.
 
+---
+
 ## 10. The `mbis` commands
 
 | Command | What it does |
@@ -166,6 +184,8 @@ You're welcome to install more skills, but only from reputable sources.
 
 Run `mbis help` any time you'd like a refresher.
 
+---
+
 ## 11. Run and view your prototype
 
 The simplest way is to **ask your agent to launch the app for you** — it knows the project layout. To launch it manually:
@@ -180,6 +200,8 @@ The simplest way is to **ask your agent to launch the app for you** — it knows
 
 Once the app is running, open the **Ports** panel in VS Code, find the port number, and click the small globe icon to open the app in your browser. The codespace forwards these ports automatically.
 
+---
+
 ## 12. What's pre-installed
 
 You don't need to install anything yourself. The codespace already has:
@@ -190,6 +212,8 @@ You don't need to install anything yourself. The codespace already has:
 - The six agentic coding tools listed above
 
 Run `mbis doctor` to see versions and confirm everything is healthy.
+
+---
 
 ## 13. Upload files to your repository
 
@@ -203,13 +227,20 @@ Inside the codespace, those files appear after `mbis sync`. There is no need to 
 
 Walkthrough: [Beginner's guide to uploading files to GitHub](https://github.blog/developer-skills/github/beginners-guide-to-github-uploading-files-and-folders-to-github/).
 
+---
+
 ## 14. Customise VS Code
 
 - Change the colour theme: <https://code.visualstudio.com/docs/configure/themes>
 - Tour of the VS Code interface: <https://code.visualstudio.com/docs/getstarted/userinterface>
 
-## 15. Acknowledgements
+---
 
-- The agent skills in this repository are adapted from Anthropic and Matt Pocock.
+## Acknowledgements
+
+- The devcontainer configuration is adapted from Harvard CS50.
+  - <https://github.com/cs50/codespace>
+
+- The agent skills in this repository are adapted from Anthropic's and Matt Pocock's.
   - <https://github.com/anthropics/skills>
   - <https://github.com/mattpocock/skills>

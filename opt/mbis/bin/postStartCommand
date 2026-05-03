@@ -6,11 +6,6 @@ AGENTSVIEW_PORT=2223
 LOG="/tmp/mbis_post_start_command.log"
 echo -e "\n--- Startup: $(date) ---" >> "$LOG"
 
-# Remnants of CS50 Codespace for Docker services
-# sudo rm -rf /var/run/docker.sock
-# sudo /etc/init.d/docker start >> "$LOG" 2>&1 || true
-# sudo /etc/init.d/postgresql start >> "$LOG" 2>&1 || true
-
 agentsview_is_running() {
     if command -v ss >/dev/null 2>&1; then
         if ss -ltn 2>/dev/null | awk -v port="$AGENTSVIEW_PORT" '$1 == "LISTEN" && $4 ~ ":" port "$" { found=1 } END { exit found ? 0 : 1 }'; then

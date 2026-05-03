@@ -34,7 +34,7 @@ A low-cost subscription with generous usage limits that gives access to open mod
 
 ## Mistral Le Chat Pro (Vibe API)
 
-A low-cost European option that grants access to Mistral's models, including **Mistral Medium 3.5** — on some benchmarks, not far behind Gemini 3 Flash and Claude Sonnet 4.6. Use the key inside `opencode` or `pi`. (A dedicated `vibe` CLI is also installed if you'd rather use a Mistral-only client.)
+A low-cost European option that grants access to Mistral's models. Use the API key inside `opencode` or `pi`.
 
 - Student discount info (use your `@uclive.ac.nz` address to register): <https://help.mistral.ai/en/articles/347553-as-a-student-am-i-eligible-for-a-discount-on-le-chat-pro>
 - API key under "Vibe": <https://console.mistral.ai/api-keys> → Codespaces secret name: `MISTRAL_API_KEY`
@@ -44,12 +44,12 @@ A low-cost European option that grants access to Mistral's models, including **M
 
 The **GitHub Copilot Student Plan was discontinued for new sign-ups in late April 2026**. If your registration got approved before then, your existing plan still works for this assignment and gives you access to Sonnet 4.6 and GPT-5.4 through the `copilot` CLI.
 
-- Student program (for context): <https://github.com/education/students>
+- Student program: <https://github.com/education/students>
 - Authentication: handled by your GitHub login — no API key needed. If `copilot` asks, run `gh auth login` once.
 
 ## Claude (Anthropic)
 
-A premium and expensive option. Available in the codespace but **not required** for this project; the options above are sufficient.
+A premium option. Available in the codespace but **not required** for this project; the options above are sufficient.
 
 - Plans: <https://claude.com/pricing>
 - API console & usage: <https://console.anthropic.com/>
@@ -57,7 +57,7 @@ A premium and expensive option. Available in the codespace but **not required** 
 
 ## Codex (OpenAI)
 
-Another premium and more expensive option. ChatGPT Go appears to include some additional Codex credits, though the exact amount is unclear at the time of writing — check the pricing page.
+A premium option. ChatGPT Go appears to include some additional Codex credits, though the exact amount is unclear at the time of writing; check the pricing page.
 
 - Plans: <https://chatgpt.com/pricing/>
 - Usage dashboard: <https://platform.openai.com/usage>
